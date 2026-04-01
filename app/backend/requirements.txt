@@ -1,0 +1,494 @@
+Now let me show you the frontend files:
+Action: $ echo "=========================================="
+echo "FILE: /app/backend/requirements.txt"
+echo "=========================================="
+cat /app/backend/requirements.txt
+echo ""
+echo "=========================================="
+echo "FILE: /app/frontend/src/App.css"
+echo "=========================================="
+cat /app/frontend/src/App.css
+echo ""
+echo "=========================================="
+echo "FILE: /app/frontend/src/index.css"
+echo "=========================================="
+cat /app/frontend/src/index.css
+Observation: ==========================================
+FILE: /app/backend/requirements.txt
+==========================================
+aiohappyeyeballs==2.6.1
+aiohttp==3.13.3
+aiosignal==1.4.0
+annotated-doc==0.0.4
+annotated-types==0.7.0
+anyio==4.12.1
+attrs==25.4.0
+bcrypt==4.1.3
+black==26.1.0
+boto3==1.42.58
+botocore==1.42.58
+certifi==2026.2.25
+cffi==2.0.0
+charset-normalizer==3.4.4
+click==8.3.1
+cryptography==46.0.5
+distro==1.9.0
+dnspython==2.8.0
+ecdsa==0.19.1
+email-validator==2.3.0
+emergentintegrations==0.1.0
+fastapi==0.110.1
+fastuuid==0.14.0
+filelock==3.25.0
+flake8==7.3.0
+frozenlist==1.8.0
+fsspec==2026.2.0
+google-ai-generativelanguage==0.6.15
+google-api-core==2.30.0
+google-api-python-client==2.191.0
+google-auth==2.49.0.dev0
+google-auth-httplib2==0.3.0
+google-genai==1.65.0
+google-generativeai==0.8.6
+googleapis-common-protos==1.72.0
+grpcio==1.78.0
+grpcio-status==1.71.2
+h11==0.16.0
+hf-xet==1.3.2
+httpcore==1.0.9
+httplib2==0.31.2
+httpx==0.28.1
+huggingface_hub==1.5.0
+idna==3.11
+importlib_metadata==8.7.1
+iniconfig==2.3.0
+isort==8.0.0
+Jinja2==3.1.6
+jiter==0.13.0
+jmespath==1.1.0
+jq==1.11.0
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+librt==0.8.1
+litellm==1.80.0
+markdown-it-py==4.0.0
+MarkupSafe==3.0.3
+mccabe==0.7.0
+mdurl==0.1.2
+motor==3.3.1
+msal==1.35.1
+multidict==6.7.1
+mypy==1.19.1
+mypy_extensions==1.1.0
+numpy==2.4.2
+oauthlib==3.3.1
+openai==1.99.9
+packaging==26.0
+pandas==3.0.1
+passlib==1.7.4
+pathspec==1.0.4
+pillow==12.1.1
+platformdirs==4.9.2
+pluggy==1.6.0
+propcache==0.4.1
+proto-plus==1.27.1
+protobuf==5.29.6
+pyasn1==0.6.2
+pyasn1_modules==0.4.2
+pycodestyle==2.14.0
+pycparser==3.0
+pydantic==2.12.5
+pydantic_core==2.41.5
+pyflakes==3.4.0
+Pygments==2.19.2
+PyJWT==2.11.0
+pymongo==4.5.0
+pyparsing==3.3.2
+pytest==9.0.2
+python-dateutil==2.9.0.post0
+python-dotenv==1.2.1
+python-jose==3.5.0
+python-multipart==0.0.22
+pytokens==0.4.1
+PyYAML==6.0.3
+referencing==0.37.0
+regex==2026.2.28
+requests==2.32.5
+requests-oauthlib==2.0.0
+rich==14.3.3
+rpds-py==0.30.0
+rsa==4.9.1
+s3transfer==0.16.0
+s5cmd==0.2.0
+shellingham==1.5.4
+six==1.17.0
+sniffio==1.3.1
+starlette==0.37.2
+stripe==14.4.0
+tenacity==9.1.4
+tiktoken==0.12.0
+tokenizers==0.22.2
+tqdm==4.67.3
+typer==0.24.1
+typing-inspection==0.4.2
+typing_extensions==4.15.0
+tzdata==2025.3
+uritemplate==4.2.0
+urllib3==2.6.3
+uvicorn==0.25.0
+watchfiles==1.1.1
+websockets==16.0
+yarl==1.23.0
+zipp==3.23.0
+
+==========================================
+FILE: /app/frontend/src/App.css
+==========================================
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;600;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Font Classes */
+.font-heading {
+  font-family: 'Chivo', sans-serif;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Base styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FAFAFA;
+  color: #18181B;
+}
+
+/* Card styles */
+.card-base {
+  background-color: #FFFFFF;
+  border: 1px solid #E4E4E7;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.card-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #F4F4F5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #0052CC;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 2px;
+  transition: background-color 0.2s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary:hover {
+  background-color: #0043A6;
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #18181B;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 2px;
+  border: 1px solid #E4E4E7;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #FAFAFA;
+}
+
+/* Status badges */
+.badge-success {
+  background-color: #ECFDF5;
+  color: #047857;
+  border: 1px solid #A7F3D0;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge-warning {
+  background-color: #FFFBEB;
+  color: #B45309;
+  border: 1px solid #FDE68A;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge-error {
+  background-color: #FEF2F2;
+  color: #B91C1C;
+  border: 1px solid #FECACA;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge-neutral {
+  background-color: #F4F4F5;
+  color: #52525B;
+  border: 1px solid #E4E4E7;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Table styles */
+.table-header {
+  background-color: #FAFAFA;
+  color: #71717A;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  border-bottom: 1px solid #E4E4E7;
+}
+
+.table-row {
+  background-color: white;
+  border-bottom: 1px solid #F4F4F5;
+  transition: background-color 0.15s;
+}
+
+.table-row:hover {
+  background-color: rgba(250, 250, 250, 0.5);
+}
+
+.table-cell {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #18181B;
+}
+
+/* JSON Viewer */
+.json-viewer {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  background-color: #FAFAFA;
+  border: 1px solid #E4E4E7;
+  border-radius: 2px;
+  padding: 16px;
+  overflow: auto;
+  max-height: 600px;
+}
+
+.json-key {
+  color: #7C3AED;
+}
+
+.json-string {
+  color: #047857;
+}
+
+.json-number {
+  color: #EA580C;
+}
+
+.json-boolean {
+  color: #2563EB;
+}
+
+.json-null {
+  color: #71717A;
+}
+
+/* Label styles */
+.label-text {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #71717A;
+  font-weight: 600;
+}
+
+/* Stat card */
+.stat-card {
+  background-color: white;
+  border: 1px solid #E4E4E7;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+.stat-value {
+  font-family: 'Chivo', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #18181B;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #71717A;
+  margin-top: 4px;
+}
+
+/* Loading skeleton animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #F4F4F5 25%, #E4E4E7 50%, #F4F4F5 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 2px;
+}
+
+/* Transitions */
+.transition-all {
+  transition: all 0.2s ease-in-out;
+}
+
+==========================================
+FILE: /app/frontend/src/index.css
+==========================================
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;600;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #FAFAFA;
+}
+
+code {
+    font-family: 'JetBrains Mono', source-code-pro, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+        --primary: 0 0% 9%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 96.1%;
+        --secondary-foreground: 0 0% 9%;
+        --muted: 0 0% 96.1%;
+        --muted-foreground: 0 0% 45.1%;
+        --accent: 0 0% 96.1%;
+        --accent-foreground: 0 0% 9%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 89.8%;
+        --input: 0 0% 89.8%;
+        --ring: 0 0% 3.9%;
+        --chart-1: 12 76% 61%;
+        --chart-2: 173 58% 39%;
+        --chart-3: 197 37% 24%;
+        --chart-4: 43 74% 66%;
+        --chart-5: 27 87% 67%;
+        --radius: 0.5rem;
+    }
+    .dark {
+        --background: 0 0% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 0 0% 3.9%;
+        --card-foreground: 0 0% 98%;
+        --popover: 0 0% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 0 0% 9%;
+        --secondary: 0 0% 14.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 0 0% 14.9%;
+        --muted-foreground: 0 0% 63.9%;
+        --accent: 0 0% 14.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 14.9%;
+        --input: 0 0% 14.9%;
+        --ring: 0 0% 83.1%;
+        --chart-1: 220 70% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}
+Exit code: 0
