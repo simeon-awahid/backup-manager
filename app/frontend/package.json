@@ -91,16 +91,3 @@
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
 
-==========================================
-FILE: /app/frontend/.env (SAMPLE - update with your URL)
-==========================================
-REACT_APP_BACKEND_URL=https://msft-policy-manager.preview.emergentagent.com
-WDS_SOCKET_PORT=443
-ENABLE_HEALTH_CHECK=false
-==========================================
-FILE: /app/backend/.env (SAMPLE - update with your MongoDB)
-==========================================
-MONGO_URL="mongodb://localhost:27017"
-DB_NAME="test_database"
-CORS_ORIGINS="*"
-Exit code: 0
