@@ -1,0 +1,12 @@
+jobs:
+- deployment: RemovePolicies
+  environment: production-entra   # approvals configured here
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - bash: |
+            echo "Payload: $PAYLOAD"
+            # parse $PAYLOAD → policy_type + policy_ids → Graph DELETE
+          env:
+            PAYLOAD: $(BackupManagerPolicyRemovePayload)
