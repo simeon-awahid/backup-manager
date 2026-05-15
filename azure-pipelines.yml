@@ -8,8 +8,6 @@ pr: none
 pool:
   vmImage: ubuntu-latest
 
-variables:
-  - group: backup-manager-graph   # optional: holds AZURE_TENANT_ID, GRAPH_CLIENT_ID, GRAPH_CLIENT_SECRET
 
 stages:
 - stage: Remove
